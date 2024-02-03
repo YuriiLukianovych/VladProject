@@ -1,17 +1,17 @@
-// @import './fonts';
-@import './layout/_header';
+@import "./base/commons";
+@import "./base/container";
 
+@import "./components/buttons";
+@import "./components/section";
+@import "./components/form";
 
-body{
-    font-family: Veles, sans-serif;
-    font-weight: 700;
-    background-color: #cdcdcc;
-    span{
-        color: #390c03;
-    }
-}
+@import "./utils/visually-hidden";
+@import "./utils/variables";
 
-img{
-    display: block;
-    max-width: 800px;
-}
+@import "./layout/companies";
+@import "./layout/contact-us";
+@import "./layout/detail";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/products";
+@import "./layout/footer";

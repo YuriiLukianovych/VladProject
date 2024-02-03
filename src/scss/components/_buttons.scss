@@ -1,0 +1,23 @@
+.btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: var(--white);
+    background-color: var(--accent);
+
+    border: none;
+    outline: none;
+    box-shadow: none;
+
+    border-radius: 5px;
+    padding: 15px 30px;
+
+    transition: var(--transition-300);
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        box-shadow: 2px 2px 10px 3px #e6a940;
+    }
+}

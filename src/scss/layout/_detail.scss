@@ -1,0 +1,53 @@
+.detail {
+    background-image: url("@img/detail-bg.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 420px) 40px;
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+    }
+
+    &__left {
+        flex-basis: calc((100% - 80px) / 2);
+        flex-shrink: 0;
+
+        padding: 280px 0;
+
+        position: relative;
+    }
+    &__right {
+        flex-basis: calc((100% - 80px) / 2);
+        flex-shrink: 0;
+    }
+
+    &__img-01 {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    &__img-02 {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
+    &__img-03 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__txt {
+        margin-bottom: 24px;
+    }
+}

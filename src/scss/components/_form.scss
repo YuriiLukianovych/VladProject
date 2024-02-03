@@ -1,0 +1,86 @@
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__title {
+        max-width: 448px;
+        font-weight: 700;
+        font-size: 31px;
+        line-height: 140%;
+        text-transform: capitalize;
+
+        margin-bottom: 14px;
+    }
+
+    &__row {
+        width: 100%;
+        &.double {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+    }
+
+    &__input,
+    &__textarea {
+        flex-grow: 1;
+
+        padding: 18px 30px;
+        border: 1px solid var(--white-25);
+        outline: none;
+        border-radius: 10px;
+        background-color: transparent;
+        color: var(--white);
+
+        transition: var(--transition-300);
+
+        &::placeholder {
+            color: var(--white-35);
+        }
+
+        &:hover,
+        &:focus {
+            border: 1px solid var(--white);
+        }
+    }
+
+    &__textarea {
+        width: 100%;
+        height: 120px;
+        resize: none;
+    }
+
+    &__checkbox {
+        &:checked + label > .checkbox > .check {
+            display: block;
+        }
+    }
+    &__label-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .checkbox {
+            border: 1px solid var(--white-30);
+            border-radius: 1px;
+            width: 12px;
+            height: 12px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .check {
+                height: 6px;
+                width: 6px;
+                background-color: var(--white-30);
+                display: none;
+            }
+        }
+        .txt {
+            color: var(--white-30);
+        }
+    }
+}

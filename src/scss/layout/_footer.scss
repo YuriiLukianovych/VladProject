@@ -1,0 +1,62 @@
+.footer {
+    background-color: var(--bg-color-92);
+    color: var(--white);
+
+    &__content {
+        padding: 96px 0;
+
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    &__brand {
+    }
+
+    &__logo {
+        margin-bottom: 19px;
+    }
+
+    &__txt {
+        max-width: 224px;
+        color: var(--white);
+    }
+
+    &__categories {
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        text-transform: capitalize;
+
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    &__link {
+        color: var(--white);
+        opacity: 0.7;
+        transition: var(--transition-300);
+
+        &:hover,
+        &:focus {
+            opacity: 1;
+        }
+    }
+
+    &__contacts {
+    }
+
+    &__news {
+    }
+
+    &__form {
+    }
+}

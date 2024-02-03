@@ -1,0 +1,87 @@
+.hero {
+    background-color: var(--dark);
+
+    color: var(--white);
+
+    background-image: url("@img/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 314px) calc(100% - 164px);
+
+    &__wrapper {
+        padding-top: 205px;
+        padding-bottom: 210px;
+
+        background-image: url("@img/hero-main-image.png");
+        background-repeat: no-repeat;
+        background-position: calc(50% + 234px) calc(100% + 70px);
+    }
+    &__content {
+        max-width: 445px;
+
+        position: relative;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: var(--accent);
+
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 61px;
+        line-height: 130%;
+        text-transform: capitalize;
+        color: var(--white);
+
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        text-transform: capitalize;
+        opacity: 0.7;
+
+        margin-bottom: 35px;
+    }
+
+    &__image {
+        width: 228px;
+        height: 129px;
+
+        background-image: url("@img/sale-bg.png"),
+            url("@img/sale-fly.png"), url("@img/sale-line.png");
+        background-repeat: no-repeat;
+        background-position: 140px 32px, 0 0, 40px 20px;
+
+        position: absolute;
+        top: calc(100% - 40px);
+        right: 6px;
+
+        pointer-events: none;
+    }
+
+    &__image-txt {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+        text-transform: capitalize;
+        text-align: center;
+        color: var(--white);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span:last-child {
+            font-size: 10px;
+        }
+
+        position: absolute;
+        right: 33px;
+        bottom: 38px;
+    }
+}
