@@ -703,7 +703,8 @@ body.is-blocked {
 .header__contacts-list-item.olx-prom {
   padding-left: 16px;
 }
-.header__contacts-list-item.olx-prom .footer__link span {
+.header__contacts-list-item.olx-prom .header__contacts-link span {
+  font-weight: 600;
   font-size: 18px;
 }
 .header__contacts-list-item.olx-prom::before {
