@@ -9,6 +9,9 @@
     &__title {
         text-align: center;
         margin-bottom: 24px;
+        @media screen and (max-width: 767.9px) {
+            margin-bottom: 16px;
+        }
     }
 
     &__txt {
@@ -23,10 +26,21 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+
+        @media screen and (max-width: 1023.9px) {
+            margin-top: 40px;
+            gap: 20px;
+        }
+        @media screen and (max-width: 767.9px) {
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 474.9px) {
+            gap: 16px;
+        }
     }
 
     &__list-item {
-        flex-basis: calc((100% - 2 * 30px) / 3);
+        flex-basis: calc((100% - 2 * 20px) / 3);
         padding: 20px 10px;
         border-radius: 10px;
         background-color: #fdeef1;
@@ -42,15 +56,46 @@
             background-color: #ecf1ff;
             border: 2px solid #acb9dd;
         }
+
+        @media screen and (max-width: 767.9px) {
+            flex-basis: calc((100% - 20px) / 2);
+
+            &:nth-child(2n) {
+                background-color: #fdeef1;
+                border: 2px solid #f4cdd5;
+            }
+
+            &:nth-child(3n) {
+                background-color: #ecf1ff;
+                border: 2px solid #acb9dd;
+            }
+        }
+        @media screen and (max-width: 474.9px) {
+            flex-basis: calc((100% - 16px) / 2);
+        }
+        @media screen and (max-width: 359.9px) {
+            flex-basis: 100%;
+        }
     }
 
     &__list-image {
         max-width: 70%;
+
+        @media screen and (max-width: 767.9px) {
+            max-width: 90%;
+        }
     }
 
     &__list-title {
         font-size: 24px;
         line-height: 120%;
         text-align: center;
+
+        @media screen and (max-width: 1023.9px) {
+            font-size: 18px;
+        }
+        @media screen and (max-width: 767.9px) {
+            font-size: 14px;
+        }
     }
 }
