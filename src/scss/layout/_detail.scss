@@ -2,10 +2,31 @@
     background-image: url("@img/detail-bg.png");
     background-repeat: no-repeat;
     background-position: calc(50% - 420px) 40px;
+
+    @media screen and (max-width: 1199.9px) {
+        background-size: 56%;
+        background-position: calc(50% - 324px) 40px;
+    }
+    @media screen and (max-width: 1023.9px) {
+        background-position: calc(50% - 277px) 20px;
+    }
+    @media screen and (max-width: 767.9px) {
+        background-position: 50% 100%;
+        background-size: 600px;
+    }
+
     &__content {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 80px;
+        @media screen and (max-width: 1023.9px) {
+            gap: 20px;
+        }
+
+        @media screen and (max-width: 767.9px) {
+            flex-direction: column-reverse;
+        }
     }
 
     &__left {
@@ -15,41 +36,68 @@
         padding: 280px 0;
 
         position: relative;
+
+        @media screen and (max-width: 1199.9px) {
+            padding: 220px 0;
+        }
+        @media screen and (max-width: 1023.9px) {
+            padding: 180px 0;
+            flex-basis: calc((100% - 20px) / 2);
+        }
+        @media screen and (max-width: 767.9px) {
+            padding: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
     &__right {
         flex-basis: calc((100% - 80px) / 2);
         flex-shrink: 0;
+
+        @media screen and (max-width: 1023.9px) {
+            flex-basis: calc((100% - 20px) / 2);
+        }
     }
 
-    &__img-01 {
+    &__image {
         position: absolute;
         top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-    }
-
-    &__img-02 {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-    }
-
-    &__img-03 {
-        position: absolute;
-        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 2;
 
         max-width: 90%;
+
+        @media screen and (max-width: 1023.9px) {
+            max-width: 95%;
+        }
+
+        @media screen and (max-width: 767.9px) {
+            position: static;
+            transform: translate(0, 0);
+            max-width: 85%;
+        }
     }
 
     &__title {
         margin-bottom: 24px;
+        @media screen and (max-width: 767.9px) {
+            margin-bottom: 16px;
+        }
     }
 
     &__txt {
         margin-bottom: 24px;
+
+        @media screen and (max-width: 767.9px) {
+            margin-bottom: 16px;
+        }
+    }
+    &__btn {
+        @media screen and (max-width: 767.9px) {
+            margin: 0 auto;
+        }
     }
 }

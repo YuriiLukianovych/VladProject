@@ -41,6 +41,14 @@ body {
     line-height: 140%;
     // text-transform: capitalize;
     color: var(--dark);
+
+    @media screen and (max-width: 767.9px) {
+        font-size: 28px;
+        line-height: 120%;
+    }
+    @media screen and (max-width: 359.9px) {
+        font-size: 24px;
+    }
 }
 .subtitle {
     font-weight: 500;
@@ -50,6 +58,14 @@ body {
     color: var(--accent);
 
     margin-bottom: 10px;
+
+    @media screen and (max-width: 767.9px) {
+        font-size: 18px;
+        line-height: 130%;
+    }
+    @media screen and (max-width: 359.9px) {
+        font-size: 16px;
+    }
 }
 .txt {
     font-weight: 400;
@@ -58,6 +74,10 @@ body {
     // text-transform: capitalize;
     color: var(--dark);
     opacity: 0.9;
+
+    @media screen and (max-width: 359.9px) {
+        font-size: 14px;
+    }
 }
 .icon20 {
     width: 20px;

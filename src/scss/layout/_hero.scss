@@ -186,18 +186,20 @@
         pointer-events: none;
 
         @media screen and (max-width: 1023.9px) {
-            right: calc(100% - 400px);
-        }
-        @media screen and (max-width: 767.9px) {
             transform: rotate(-25deg);
+            right: calc(100% - 412px);
             top: calc(100% - 90px);
         }
         @media screen and (max-width: 474.9px) {
-            right: calc(100% - 330px);
             top: calc(100% - 76px);
-
+            right: calc(100% - 350px);
             width: 170px;
             height: 94px;
+        }
+        @media screen and (max-width: 419.9px) {
+            right: calc(100% - 330px);
+            width: 150px;
+            height: 80px;
         }
         @media screen and (max-width: 359.9px) {
             display: none;

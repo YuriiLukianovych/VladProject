@@ -139,7 +139,15 @@
 
     &__btn {
         @media screen and (max-width: 767.9px) {
+            padding: 16px;
             margin-left: auto;
+        }
+        @media screen and (max-width: 419.9px) {
+            padding: 12px;
+            svg {
+                width: 14px;
+                height: 14px;
+            }
         }
     }
 }
