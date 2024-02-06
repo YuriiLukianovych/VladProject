@@ -26,6 +26,9 @@ body {
   line-height: 160%;
   color: var(--dark);
 }
+body.is-blocked {
+  overflow: hidden;
+}
 
 .dn {
   display: none;
@@ -632,7 +635,7 @@ body {
     padding-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 40px;
     align-items: center;
     overflow-y: auto;
     transition: var(--transition-300);
@@ -686,10 +689,33 @@ body {
   flex-direction: column;
   gap: 20px;
 }
+.header__contacts-list.rels {
+  gap: 10px;
+}
 @media screen and (min-width: 768px) {
   .header__contacts-list {
     display: none;
   }
+}
+.header__contacts-list-item {
+  position: relative;
+}
+.header__contacts-list-item.olx-prom {
+  padding-left: 16px;
+}
+.header__contacts-list-item.olx-prom .footer__link span {
+  font-size: 18px;
+}
+.header__contacts-list-item.olx-prom::before {
+  display: block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: var(--accent);
+  transform: rotate(45deg) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 0;
 }
 .header__contacts-link {
   display: flex;
@@ -698,6 +724,9 @@ body {
 }
 .header__contacts-link svg {
   color: var(--accent);
+}
+.header__contacts-link img {
+  width: 36px;
 }
 .header__contacts-link span {
   color: var(--white);
@@ -1172,6 +1201,9 @@ body {
 .footer__list-item.olx-prom {
   padding-left: 16px;
 }
+.footer__list-item.olx-prom .footer__link span {
+  font-size: 18px;
+}
 .footer__list-item.olx-prom::before {
   display: block;
   content: "";
@@ -1209,6 +1241,10 @@ body {
   margin: 20px 0;
 }
 .footer .all-rights {
-  text-align: center;
   opacity: 0.7;
+}
+@media screen and (max-width: 767.9px) {
+  .footer .all-rights {
+    text-align: center;
+  }
 }
