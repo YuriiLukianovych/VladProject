@@ -1096,11 +1096,11 @@ body {
   background-color: var(--bg-color-92);
   color: var(--white);
 }
-.footer .container {
+.footer__wrapper {
   padding: 96px 0;
 }
 @media screen and (max-width: 1023.9px) {
-  .footer .container {
+  .footer__wrapper {
     padding: 40px 0;
   }
 }
