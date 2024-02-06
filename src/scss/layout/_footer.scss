@@ -76,6 +76,10 @@
 
         &.olx-prom {
             padding-left: 16px;
+
+            .footer__link span {
+                font-size: 18px;
+            }
         }
 
         &.olx-prom::before {
@@ -128,7 +132,9 @@
         margin: 20px 0;
     }
     .all-rights {
-        text-align: center;
         opacity: 0.7;
+        @media screen and (max-width: 767.9px) {
+            text-align: center;
+        }
     }
 }

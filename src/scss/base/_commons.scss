@@ -24,6 +24,10 @@ body {
     font-size: 16px;
     line-height: 160%;
     color: var(--dark);
+
+    &.is-blocked {
+        overflow: hidden;
+    }
 }
 
 .dn {
