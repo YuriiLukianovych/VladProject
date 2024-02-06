@@ -2,15 +2,31 @@
     background-color: var(--bg-color-92);
     color: var(--white);
 
-    &__content {
+    .container {
         padding: 96px 0;
+        @media screen and (max-width: 1023.9px) {
+            padding: 40px 0;
+        }
+    }
 
+    &__content {
         display: flex;
         gap: 30px;
         justify-content: space-between;
+
+        @media screen and (max-width: 1023.9px) {
+            flex-wrap: wrap;
+        }
+        @media screen and (max-width: 767.9px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 
     &__brand {
+        @media screen and (max-width: 1023.9px) {
+            margin-right: auto;
+        }
     }
 
     &__logo {
@@ -20,9 +36,15 @@
     &__txt {
         max-width: 280px;
         color: var(--white);
+        @media screen and (max-width: 767.9px) {
+            max-width: auto;
+        }
     }
 
     &__categories {
+        @media screen and (max-width: 1023.9px) {
+            order: 3;
+        }
     }
 
     &__title {
@@ -31,6 +53,10 @@
         line-height: 150%;
 
         margin-bottom: 20px;
+
+        @media screen and (max-width: 767.9px) {
+            margin-bottom: 12px;
+        }
     }
 
     &__list {
@@ -40,6 +66,9 @@
 
         &.contacts-list {
             gap: 24px;
+            @media screen and (max-width: 767.9px) {
+                gap: 12px;
+            }
         }
     }
     &__list-item {
@@ -90,5 +119,16 @@
     }
 
     &__contacts {
+    }
+
+    .divider {
+        height: 1px;
+        width: 100%;
+        background-color: var(--white-35);
+        margin: 20px 0;
+    }
+    .all-rights {
+        text-align: center;
+        opacity: 0.7;
     }
 }
