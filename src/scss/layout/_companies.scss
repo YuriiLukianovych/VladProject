@@ -5,6 +5,10 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+
+        @media screen and (max-width: 1023.9px) {
+            gap: 20px;
+        }
     }
 
     &__list-item {
@@ -13,6 +17,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media screen and (max-width: 1023.9px) {
+            flex-basis: calc((100% - 2 * 20px) / 3);
+        }
+        @media screen and (max-width: 359.9px) {
+            flex-basis: calc((100% - 20px) / 2);
+        }
+        @media screen and (max-width: 319.9px) {
+            flex-basis: 100%;
+        }
 
         img {
             max-width: 100%;
