@@ -4,7 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bag Project</title>
+    <!-- *** favicons *** -->
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- *** end favicons *** -->
+    <title>Електронні модулі та комплектуючі до пральних, сушильних та посудомийних
+        машин.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -32,6 +42,24 @@
                         <a href="#contact-us" class="header__nav-link">Написати нам</a>
                     </li>
                 </ul>
+                <ul class="header__contacts-list">
+                    <li class="header__contacts-list-item">
+                        <a href="tel:+380682131464" class="header__contacts-link">
+                            <svg class="icon24">
+                                <use href="img/svg/sprite/sprite.svg#phone"></use>
+                            </svg>
+                            <span>+38 (068) 213 14 64</span>
+                        </a>
+                    </li>
+                    <li class="header__contacts-list-item">
+                        <a href="mailto:vladohabondar777@gmail.com" class="header__contacts-link">
+                            <svg class="icon24">
+                                <use href="img/svg/sprite/sprite.svg#mail"></use>
+                            </svg>
+                            <span>vladohabondar777@gmail.com</span>
+                        </a>
+                    </li>
+                </ul>
             </nav>
             <a class="btn header__btn" href="tel:+380682131464">
                 <svg class="icon20">
@@ -39,6 +67,20 @@
                 </svg>
                 <span>Замовити</span>
             </a>
+
+            <div class="burger-menu">
+                <button class="burger-menu__btn clear-btn" type="button" data-mobile-menu-open>
+                    <svg class="icon20">
+                        <use href="img/svg/sprite/sprite.svg#menu"></use>
+                    </svg>
+                </button>
+
+                <button class="burger-menu__btn clear-btn btn-hidden" type="button" data-mobile-menu-close>
+                    <svg class="icon20">
+                        <use href="img/svg/sprite/sprite.svg#cross"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </header>
     <main>
@@ -51,7 +93,7 @@
                             машин.</h1>
                         <p class="hero__text">Запчастини пральних, сушильних та посудомийних машин. Комплекти
                             електроніки( модулів), електродвигуни, дверки, та інші
-                            комплектуючі</p>
+                            комплектуючі.</p>
                         <a class="btn hero__btn" href="tel:+380682131464">
                             <svg class="icon20">
                                 <use href="img/svg/sprite/sprite.svg#phone"></use>
@@ -86,10 +128,7 @@
             <div class="container">
                 <div class="detail__content">
                     <div class="detail__left">
-                        <!-- <img class="detail__img-01" src="img/detail-01.png" alt="bag image 01"> -->
-                        <!-- <img class="detail__img-02" src="img/detail-02.png" alt="bag image 02"> -->
-                        <!-- <img class="detail__img-03" src="img/detail-03.png" alt="bag image 03"> -->
-                        <img class="detail__img-03" src="img/vlad/png/komplekty-electronnyh-moduliv-2.png"
+                        <img class="detail__image" src="img/vlad/png/komplekty-electronnyh-moduliv-3.png"
                             alt="tool image 03">
                     </div>
                     <div class="detail__right">
@@ -223,36 +262,28 @@
         </section>
         <section class="contact-us section" id="contact-us">
             <div class="container">
+                <h2 class="contact-us__title title">Зворотній зв'язок</h2>
+                <p class="contact-us__txt txt">Виникли питання? Напишіть нам і, ми обов'язково зателефонуємо та
+                    проконсультуємо Вас</p>
                 <div class="contact-us__content">
                     <div class="contact-us__left">
-                        <!-- <img src="img/contact-image.png" alt="boy with our bag"> -->
-                        <img src="img/vlad/hero-img.jpg" alt="tools image">
+                        <img src="img/vlad/hero-img.jpg" alt="shelf with goods">
                         <div class="contact-us__overlay"></div>
                     </div>
                     <div class="contact-us__right">
                         <form class="contact-us__form form" autocomplete="off">
-                            <h2 class="form__title">Виникли питання? <br> Напишіть нам, і ми обов'язково зателефонуємо
-                                та
-                                проконсультуємо Вас</h2>
+                            <!-- <h2 class="form__title"></h2> -->
                             <div class="form__row double">
-                                <input class="form__input" type="text" name="name" id="form-name" placeholder="Name"
+                                <input class="form__input" type="text" name="name" id="form-name" placeholder="Ім'я"
                                     autocomplete="off">
-                                <input class="form__input" type="text" name="phone" id="form-phone" placeholder="Phone"
-                                    autocomplete="off">
+                                <input class="form__input" type="text" name="phone" id="form-phone"
+                                    placeholder="Номер телефону" autocomplete="off">
                             </div>
                             <div class="form__row">
                                 <textarea class="form__textarea" id="form-textarea"
-                                    placeholder="Your message..."></textarea>
+                                    placeholder="Ваше повідомлення..."></textarea>
                             </div>
-                            <div class="form__row double">
-                                <!-- <input class="form__checkbox visually-hidden" type="checkbox" name="licence"
-                                    id="licence">
-                                <label class="form__label-checkbox" for="licence">
-                                    <div class="checkbox">
-                                        <div class="check"></div>
-                                    </div>
-                                    <p class="txt">Lorem ipsum dolor sit amet.</p>
-                                </label> -->
+                            <div class="form__row">
                                 <button class="form__btn btn" type="submit">Надіслати</button>
                             </div>
                         </form>
@@ -311,6 +342,10 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="divider"></div>
+            <div class="all-rights">
+                &#169; Всі права захищені 2024
             </div>
         </div>
     </footer>
