@@ -24,4 +24,38 @@
     &:hover {
         box-shadow: 2px 2px 10px 3px #e6a940;
     }
+
+    @media screen and (max-width: 767.9px) {
+        padding: 12px 16px;
+    }
+    @media screen and (max-width: 419.9px) {
+        padding: 8px 12px;
+        svg {
+            width: 14px;
+            height: 14px;
+        }
+    }
+}
+
+.clear-btn {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    background-color: transparent;
+    transition: var(--transition-300);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    &:hover,
+    &:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
 }
