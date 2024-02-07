@@ -31,7 +31,6 @@
     }
 
     &__logo {
-        border: 1px solid red;
         img {
             max-height: 50px;
 
@@ -41,7 +40,6 @@
         }
     }
     &__nav {
-        border: 1px solid red;
         margin-left: auto;
 
         &.visible {
