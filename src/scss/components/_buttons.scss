@@ -21,6 +21,14 @@
     gap: 8px;
     width: max-content;
 
+    &.animated {
+        animation: buttonAnimation 1.5s infinite linear;
+
+        &:hover {
+            animation-play-state: paused; /* зупиняє анімацію при наведенні */
+        }
+    }
+
     &:hover {
         box-shadow: 2px 2px 10px 3px #e6a940;
     }
@@ -45,6 +53,20 @@
     &:focus {
         border: none;
         outline: none;
+        box-shadow: none;
+    }
+}
+
+@keyframes buttonAnimation {
+    0% {
+        box-shadow: none;
+    }
+
+    50% {
+        box-shadow: 2px 2px 10px 3px #e6a940;
+    }
+
+    100% {
         box-shadow: none;
     }
 }
