@@ -19,7 +19,7 @@
     "devDependencies": {
         "browser-sync": "latest",
         "del": "latest",
-        "gh-pages": "latest",
+        "gh-pages": "^6.1.1",
         "gulp": "latest",
         "gulp-autoprefixer": "latest",
         "gulp-clean-css": "latest",
