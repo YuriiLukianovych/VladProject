@@ -15,7 +15,7 @@
     },
     "author": "Yurii Lukianovych",
     "license": "ISC",
-    "homepage": "https://household-electronics.store/",
+    "homepage": "",
     "devDependencies": {
         "browser-sync": "latest",
         "del": "latest",
