@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -163,6 +164,12 @@ body.is-blocked {
   gap: 8px;
   width: max-content;
 }
+.btn.animated {
+  animation: buttonAnimation 1.5s infinite linear;
+}
+.btn.animated:hover {
+  animation-play-state: paused; /* зупиняє анімацію при наведенні */
+}
 .btn:hover {
   box-shadow: 2px 2px 10px 3px #e6a940;
 }
@@ -187,6 +194,17 @@ body.is-blocked {
   box-shadow: none;
 }
 
+@keyframes buttonAnimation {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 2px 2px 10px 3px #e6a940;
+  }
+  100% {
+    box-shadow: none;
+  }
+}
 .section {
   padding: 50px 0;
 }
