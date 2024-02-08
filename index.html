@@ -58,6 +58,18 @@
                             <span>vladohabondar777@gmail.com</span>
                         </a>
                     </li>
+                    <li class="header__contacts-list-item">
+                        <a href="tg://resolve?domain=vladislavvv_bondar" class="header__contacts-link">
+                            <img class="icon-img" src="img/svg/telegram-2.svg" alt="telegram logo">
+                            <span>Напишіть нам в Telegram</span>
+                        </a>
+                    </li>
+                    <li class="header__contacts-list-item">
+                        <a href="viber://chat?number=380682131464" class="header__contacts-link">
+                            <img class="icon-img" src="img/svg/viber.svg" alt="viber logo">
+                            <span>Напишіть нам в Viber</span>
+                        </a>
+                    </li>
                 </ul>
                 <ul class="header__contacts-list rels">
                     <li class="header__contacts-list-item olx-prom">
@@ -76,12 +88,12 @@
                     </li>
                 </ul>
             </nav>
-            <a class="btn header__btn animated" href="tel:+380682131464">
+            <button class="btn header__btn animated" type="button" data-modal-open>
                 <svg class="icon20">
                     <use href="img/svg/sprite/sprite.svg#phone"></use>
                 </svg>
                 <span>Замовити</span>
-            </a>
+            </button>
 
             <div class="burger-menu">
                 <button class="burger-menu__btn clear-btn" type="button" data-mobile-menu-open>
@@ -109,12 +121,12 @@
                         <p class="hero__text">Запчастини пральних, сушильних та посудомийних машин. Комплекти
                             електроніки( модулів), електродвигуни, дверки, та інші
                             комплектуючі.</p>
-                        <a class="btn hero__btn animated" href="tel:+380682131464">
+                        <button class="btn hero__btn animated" type="button" data-modal-open>
                             <svg class="icon20">
                                 <use href="img/svg/sprite/sprite.svg#phone"></use>
                             </svg>
                             <span>Замовити</span>
-                        </a>
+                        </button>
 
                         <div class="hero__decor">
                         </div>
@@ -152,12 +164,12 @@
                         </h2>
                         <p class="detail__txt txt">Можливі комплекти із проводкою та двигуном, що зручно допоможе із
                             інвертерної зробити колекторну пральну машину.</p>
-                        <a class="detail__btn btn animated" href="tel:+380682131464">
+                        <button class="detail__btn btn animated" type="button" data-modal-open>
                             <svg class="icon20">
                                 <use href="img/svg/sprite/sprite.svg#phone"></use>
                             </svg>
                             <span>Замовити</span>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -166,8 +178,13 @@
             <div class="container">
                 <div class="products__contents">
                     <h2 class="products__title title">Модулі та комплектуючі</h2>
-                    <p class="products__txt txt">Модулі, комплекти модулів, комплектуючі до пральних, сушильних та
-                        посудомийних машин. Маємо все що вам потрібно!</p>
+                    <p class="products__txt txt">Пропонуємо вам запчастини з Європи до різних популярних та менш відомих
+                        брендів та моделей. <br>
+                        <span>Маємо в наявності наявності:</span> електронні модулі (можливі комплекти з проводкою та
+                        навісним), двигуни до пральних та сушильних машин, хрестовини, манжети(резини) люка, тени,
+                        амартизатори, циркуляційні насоси пмм, люки до пральних, люки до сушильних, зливні насоси,
+                        барабани(баки) та багато іншого. Звертайтесь! Наш менеджар із задоволенням вас проконсультує.
+                    </p>
                     <ul class="products__list">
                         <li class="products__list-item">
                             <img class="products__list-image" src="img/vlad/png/inverter-2.png"
@@ -287,13 +304,18 @@
                         <div class="contact-us__overlay"></div>
                     </div>
                     <div class="contact-us__right">
-                        <form class="contact-us__form form" autocomplete="off">
-                            <!-- <h2 class="form__title"></h2> -->
+                        <form class="contact-us__form form" autocomplete="off" id="form">
                             <div class="form__row double">
                                 <input class="form__input" type="text" name="name" id="form-name" placeholder="Ім'я"
                                     autocomplete="off">
                                 <input class="form__input" type="text" name="phone" id="form-phone"
                                     placeholder="Номер телефону" autocomplete="off">
+                                <p class="form__error">
+                                    <svg>
+                                        <use href="img/svg/sprite/sprite.svg#warning"></use>
+                                    </svg>
+                                    <span>Введіть валідний номер телефону!</span>
+                                </p>
                             </div>
                             <div class="form__row">
                                 <textarea class="form__textarea" id="form-textarea"
@@ -368,6 +390,43 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-btn" type="button" data-modal-close>
+                <svg class="icon20">
+                    <use href="img/svg/sprite/sprite.svg#cross"></use>
+                </svg>
+            </button>
+
+            <!-- Content -->
+            <div class="modal__content">
+                <ul class="modal__list">
+                    <li class="modal__list-item">
+                        <a href="tel:+380682131464" class="modal__link tel" data-modal-link>
+                            <svg class="icon24">
+                                <use href="img/svg/sprite/sprite.svg#phone"></use>
+                            </svg>
+                            <span>+38 (068) 213 14 64</span>
+                        </a>
+                    </li>
+                    <li class="modal__list-item">
+                        <a href="tg://resolve?domain=vladislavvv_bondar" class="modal__link" data-modal-link>
+                            <img src="img/svg/telegram-2.svg" alt="telegram logo">
+                            <span>Напишіть нам в Telegram</span>
+                        </a>
+                    </li>
+                    <li class="modal__list-item">
+                        <a href="viber://chat?number=380682131464" class="modal__link" data-modal-link>
+                            <img src="img/svg/viber.svg" alt="viber logo">
+                            <span>Напишіть нам в Viber</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
         integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
