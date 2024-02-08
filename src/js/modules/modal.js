@@ -1,6 +1,7 @@
 const modalWindow = () => {
     const openBtns = document.querySelectorAll("[data-modal-open]");
     const closeBtn = document.querySelector("[data-modal-close]");
+    const modalLinks = document.querySelectorAll("[data-modal-link]");
     const modal = document.querySelector("[data-modal]");
     const bodyh = document.body;
 
@@ -16,6 +17,10 @@ const modalWindow = () => {
 
         window.addEventListener("keydown", esc);
         window.addEventListener("click", clickOnBackdrop);
+
+        modalLinks.forEach((link) => {
+            link.addEventListener("click", closeModal);
+        });
     }
 
     function closeModal() {
@@ -24,6 +29,10 @@ const modalWindow = () => {
 
         window.removeEventListener("keydown", esc);
         window.removeEventListener("click", clickOnBackdrop);
+
+        modalLinks.forEach((link) => {
+            link.removeEventListener("click", closeModal);
+        });
     }
 
     function esc(e) {

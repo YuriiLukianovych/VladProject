@@ -58,6 +58,18 @@
                             <span>vladohabondar777@gmail.com</span>
                         </a>
                     </li>
+                    <li class="header__contacts-list-item">
+                        <a href="tg://resolve?domain=vladislavvv_bondar" class="header__contacts-link">
+                            <img class="icon-img" src="@img/svg/telegram-2.svg" alt="telegram logo">
+                            <span>Напишіть нам в Telegram</span>
+                        </a>
+                    </li>
+                    <li class="header__contacts-list-item">
+                        <a href="viber://chat?number=380682131464" class="header__contacts-link">
+                            <img class="icon-img" src="@img/svg/viber.svg" alt="viber logo">
+                            <span>Напишіть нам в Viber</span>
+                        </a>
+                    </li>
                 </ul>
                 <ul class="header__contacts-list rels">
                     <li class="header__contacts-list-item olx-prom">
@@ -76,12 +88,12 @@
                     </li>
                 </ul>
             </nav>
-            <a class="btn header__btn animated" href="tel:+380682131464" data-modal-open>
+            <button class="btn header__btn animated" type="button" data-modal-open>
                 <svg class="icon20">
                     <use href="@img/svg/sprite/sprite.svg#phone"></use>
                 </svg>
                 <span>Замовити</span>
-            </a>
+            </button>
 
             <div class="burger-menu">
                 <button class="burger-menu__btn clear-btn" type="button" data-mobile-menu-open>
@@ -109,12 +121,12 @@
                         <p class="hero__text">Запчастини пральних, сушильних та посудомийних машин. Комплекти
                             електроніки( модулів), електродвигуни, дверки, та інші
                             комплектуючі.</p>
-                        <a class="btn hero__btn animated" href="tel:+380682131464" data-modal-open>
+                        <button class="btn hero__btn animated" type="button" data-modal-open>
                             <svg class="icon20">
                                 <use href="@img/svg/sprite/sprite.svg#phone"></use>
                             </svg>
                             <span>Замовити</span>
-                        </a>
+                        </button>
 
                         <div class="hero__decor">
                         </div>
@@ -152,12 +164,12 @@
                         </h2>
                         <p class="detail__txt txt">Можливі комплекти із проводкою та двигуном, що зручно допоможе із
                             інвертерної зробити колекторну пральну машину.</p>
-                        <a class="detail__btn btn animated" href="tel:+380682131464" data-modal-open>
+                        <button class="detail__btn btn animated" type="button" data-modal-open>
                             <svg class="icon20">
                                 <use href="@img/svg/sprite/sprite.svg#phone"></use>
                             </svg>
                             <span>Замовити</span>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -373,7 +385,7 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="close-btn" type="button" data-modal-close>
-                <svg class="icon-close">
+                <svg class="icon20">
                     <use href="@img/svg/sprite/sprite.svg#cross"></use>
                 </svg>
             </button>
@@ -382,7 +394,7 @@
             <div class="modal__content">
                 <ul class="modal__list">
                     <li class="modal__list-item">
-                        <a href="tel:+380682131464">
+                        <a href="tel:+380682131464" class="modal__link tel" data-modal-link>
                             <svg class="icon24">
                                 <use href="@img/svg/sprite/sprite.svg#phone"></use>
                             </svg>
@@ -390,10 +402,16 @@
                         </a>
                     </li>
                     <li class="modal__list-item">
-                        <span>link to Telegram</span>
+                        <a href="tg://resolve?domain=vladislavvv_bondar" class="modal__link" data-modal-link>
+                            <img src="@img/svg/telegram-2.svg" alt="telegram logo">
+                            <span>Напишіть нам в Telegram</span>
+                        </a>
                     </li>
                     <li class="modal__list-item">
-                        <span>link to Telegram</span>
+                        <a href="viber://chat?number=380682131464" class="modal__link" data-modal-link>
+                            <img src="@img/svg/viber.svg" alt="viber logo">
+                            <span>Напишіть нам в Viber</span>
+                        </a>
                     </li>
                 </ul>
             </div>
