@@ -304,13 +304,18 @@
                         <div class="contact-us__overlay"></div>
                     </div>
                     <div class="contact-us__right">
-                        <form class="contact-us__form form" autocomplete="off">
-                            <!-- <h2 class="form__title"></h2> -->
+                        <form class="contact-us__form form" autocomplete="off" id="form">
                             <div class="form__row double">
                                 <input class="form__input" type="text" name="name" id="form-name" placeholder="Ім'я"
                                     autocomplete="off">
                                 <input class="form__input" type="text" name="phone" id="form-phone"
                                     placeholder="Номер телефону" autocomplete="off">
+                                <p class="form__error">
+                                    <svg>
+                                        <use href="@img/svg/sprite/sprite.svg#warning"></use>
+                                    </svg>
+                                    <span>Введіть валідний номер телефону!</span>
+                                </p>
                             </div>
                             <div class="form__row">
                                 <textarea class="form__textarea" id="form-textarea"
