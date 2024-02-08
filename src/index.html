@@ -76,7 +76,7 @@
                     </li>
                 </ul>
             </nav>
-            <a class="btn header__btn animated" href="tel:+380682131464">
+            <a class="btn header__btn animated" href="tel:+380682131464" data-modal-open>
                 <svg class="icon20">
                     <use href="@img/svg/sprite/sprite.svg#phone"></use>
                 </svg>
@@ -109,7 +109,7 @@
                         <p class="hero__text">Запчастини пральних, сушильних та посудомийних машин. Комплекти
                             електроніки( модулів), електродвигуни, дверки, та інші
                             комплектуючі.</p>
-                        <a class="btn hero__btn animated" href="tel:+380682131464">
+                        <a class="btn hero__btn animated" href="tel:+380682131464" data-modal-open>
                             <svg class="icon20">
                                 <use href="@img/svg/sprite/sprite.svg#phone"></use>
                             </svg>
@@ -152,7 +152,7 @@
                         </h2>
                         <p class="detail__txt txt">Можливі комплекти із проводкою та двигуном, що зручно допоможе із
                             інвертерної зробити колекторну пральну машину.</p>
-                        <a class="detail__btn btn animated" href="tel:+380682131464">
+                        <a class="detail__btn btn animated" href="tel:+380682131464" data-modal-open>
                             <svg class="icon20">
                                 <use href="@img/svg/sprite/sprite.svg#phone"></use>
                             </svg>
@@ -368,6 +368,37 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-btn" type="button" data-modal-close>
+                <svg class="icon-close">
+                    <use href="@img/svg/sprite/sprite.svg#cross"></use>
+                </svg>
+            </button>
+
+            <!-- Content -->
+            <div class="modal__content">
+                <ul class="modal__list">
+                    <li class="modal__list-item">
+                        <a href="tel:+380682131464">
+                            <svg class="icon24">
+                                <use href="@img/svg/sprite/sprite.svg#phone"></use>
+                            </svg>
+                            <span>+38 (068) 213 14 64</span>
+                        </a>
+                    </li>
+                    <li class="modal__list-item">
+                        <span>link to Telegram</span>
+                    </li>
+                    <li class="modal__list-item">
+                        <span>link to Telegram</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
         integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
