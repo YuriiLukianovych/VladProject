@@ -29,6 +29,7 @@
 
     &__row {
         width: 100%;
+        position: relative;
         &.double {
             display: flex;
             gap: 30px;
@@ -106,6 +107,38 @@
         }
         .txt {
             color: var(--white-30);
+        }
+    }
+    &__error {
+        width: 100%;
+        background-color: #e94242;
+        color: var(--white);
+        font-weight: 500;
+        line-height: 1.15;
+        padding: 8px 12px;
+        border-radius: 10px;
+
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        position: absolute;
+        top: calc(100% + 6px);
+        left: 0;
+        z-index: 2;
+
+        opacity: 0;
+        pointer-events: none;
+        transition: var(--transition-300);
+
+        &.show {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        svg {
+            width: 32px;
+            height: 32px;
         }
     }
 }

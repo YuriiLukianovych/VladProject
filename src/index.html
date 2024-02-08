@@ -178,8 +178,13 @@
             <div class="container">
                 <div class="products__contents">
                     <h2 class="products__title title">Модулі та комплектуючі</h2>
-                    <p class="products__txt txt">Модулі, комплекти модулів, комплектуючі до пральних, сушильних та
-                        посудомийних машин. Маємо все що вам потрібно!</p>
+                    <p class="products__txt txt">Пропонуємо вам запчастини з Європи до різних популярних та менш відомих
+                        брендів та моделей. <br>
+                        <span>Маємо в наявності наявності:</span> електронні модулі (можливі комплекти з проводкою та
+                        навісним), двигуни до пральних та сушильних машин, хрестовини, манжети(резини) люка, тени,
+                        амартизатори, циркуляційні насоси пмм, люки до пральних, люки до сушильних, зливні насоси,
+                        барабани(баки) та багато іншого. Звертайтесь! Наш менеджар із задоволенням вас проконсультує.
+                    </p>
                     <ul class="products__list">
                         <li class="products__list-item">
                             <img class="products__list-image" src="@img/vlad/png/inverter-2.png"
@@ -299,13 +304,18 @@
                         <div class="contact-us__overlay"></div>
                     </div>
                     <div class="contact-us__right">
-                        <form class="contact-us__form form" autocomplete="off">
-                            <!-- <h2 class="form__title"></h2> -->
+                        <form class="contact-us__form form" autocomplete="off" id="form">
                             <div class="form__row double">
                                 <input class="form__input" type="text" name="name" id="form-name" placeholder="Ім'я"
                                     autocomplete="off">
                                 <input class="form__input" type="text" name="phone" id="form-phone"
                                     placeholder="Номер телефону" autocomplete="off">
+                                <p class="form__error">
+                                    <svg>
+                                        <use href="@img/svg/sprite/sprite.svg#warning"></use>
+                                    </svg>
+                                    <span>Введіть валідний номер телефону!</span>
+                                </p>
                             </div>
                             <div class="form__row">
                                 <textarea class="form__textarea" id="form-textarea"

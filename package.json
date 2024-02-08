@@ -1,5 +1,5 @@
 {
-    "name": "VladProject",
+    "name": "household-electronics.store",
     "version": "1.0.0",
     "description": "",
     "main": "gulpfile.js",
@@ -48,5 +48,8 @@
         "webp-converter": "2.2.3",
         "webpack": "latest",
         "webpack-stream": "latest"
+    },
+    "dependencies": {
+        "imask": "^7.4.0"
     }
 }
