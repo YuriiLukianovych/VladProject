@@ -35,23 +35,22 @@ const formFoo = () => {
                 }, 2000);
                 return;
             }
-            form.reset();
 
-            // async function sendMessage(url_address) {
-            //     return await fetch(url_address).then((response) => {
-            //         if (!response.ok) {
-            //             throw new Error(response.status);
-            //         }
-            //         return response.json();
-            //     });
-            // }
+            async function sendMessage(url_address) {
+                return await fetch(url_address).then((response) => {
+                    if (!response.ok) {
+                        throw new Error(response.status);
+                    }
+                    return response.json();
+                });
+            }
 
-            // sendMessage(url)
-            //     .then(() => {
-            //         console.log("Successfully sended!");
-            //         form.reset();
-            //     })
-            //     .catch((error) => console.log(error));
+            sendMessage(url)
+                .then(() => {
+                    console.log("Successfully sended!");
+                    form.reset();
+                })
+                .catch((error) => console.log(error));
         }, 1000)
     );
 };
