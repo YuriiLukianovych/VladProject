@@ -47,7 +47,6 @@ const formFoo = () => {
 
             sendMessage(url)
                 .then(() => {
-                    console.log("Successfully sended!");
                     form.reset();
                 })
                 .catch((error) => console.log(error));
