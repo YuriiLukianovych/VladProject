@@ -32,7 +32,7 @@ const formFoo = () => {
                 errorBox.classList.add("show");
                 setTimeout(() => {
                     errorBox.classList.remove("show");
-                }, 2000);
+                }, 3000);
                 return;
             }
 
