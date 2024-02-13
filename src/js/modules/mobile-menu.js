@@ -17,13 +17,13 @@ const mobileMenu = () => {
         openBtn.classList.add("btn-hidden");
         closeBtn.classList.remove("btn-hidden");
         mobileMenu.classList.add("visible");
-        bodyh.classList.toggle("is-blocked");
+        bodyh.classList.add("is-blocked");
     }
     function closeMenu() {
         closeBtn.classList.add("btn-hidden");
         openBtn.classList.remove("btn-hidden");
         mobileMenu.classList.remove("visible");
-        bodyh.classList.toggle("is-blocked");
+        bodyh.classList.remove("is-blocked");
     }
 };
 
