@@ -3,4 +3,5 @@
 Зверстатий та зібраний за допомогою Gulp
 
 ##Домашня сторінка:
-[перейти]([https://household-electronics.store/](https://yuriilukianovych.github.io/VladProject/)https://yuriilukianovych.github.io/VladProject/)
+
+#### [Перейти :rocket:](https://yuriilukianovych.github.io/VladProject/)
