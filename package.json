@@ -1,5 +1,5 @@
 {
-    "name": "household-electronics.store",
+    "name": "yuriilukianovych.github.io/VladProject/",
     "version": "1.0.0",
     "description": "",
     "main": "gulpfile.js",
@@ -15,7 +15,7 @@
     },
     "author": "Yurii Lukianovych",
     "license": "ISC",
-    "homepage": "https://household-electronics.store/",
+    "homepage": "https://yuriilukianovych.github.io/VladProject/",
     "devDependencies": {
         "browser-sync": "latest",
         "del": "latest",
