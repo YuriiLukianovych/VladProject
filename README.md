@@ -4,4 +4,4 @@
 
 ##Домашня сторінка:
 
-#### [Перейти :rocket:](https://yuriilukianovych.github.io/VladProject/)
+#### [Перейти :rocket:](https://household-electronics.store/)
